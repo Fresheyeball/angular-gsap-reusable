@@ -1,0 +1,17 @@
+// //
+// exmaple implimentation
+// //
+
+a.btn(openmodal,width="750",height="350",content="myModal") Open My Modal
+
+script(type="text/ng-template",id="myModal")
+	h1 Hey there, I am content!
+
+// //
+// modal snippet
+// //
+
+#overlay(closemodal)
+#modal
+	a#closeModal(closemodal)
+	#modalContent(ng-include,src="modalTpl")

@@ -1,0 +1,16 @@
+<!-- exmaple implimentation-->
+
+<a openmodal="openmodal" width="750" height="350" content="myModal" class="btn">
+	Open My Modal
+</a>
+
+<script type="text/ng-template" id="myModal">
+	<h1>Hey there, I am content!</h1>
+</script>
+
+<!-- modal snippet-->
+
+<div id="overlay" closemodal="closemodal"></div>
+<div id="modal"><a id="closeModal" closemodal="closemodal"></a>
+	<div id="modalContent" ng-include="ng-include" src="modalTpl"></div>
+</div>
