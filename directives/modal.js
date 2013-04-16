@@ -7,7 +7,7 @@
 
 
 (function() {
-  var close, injectdeject, isOpen, modal, modalElem, open, overlayElem, rootScope;
+  var close, injectdeject, isOpen, modal, modalElem, modalScope, open, overlayElem;
 
   modal = angular.module('modal', []);
 
@@ -17,10 +17,9 @@
 
   overlayElem = null;
 
-  rootScope = null;
+  modalScope = null;
 
   angular.element(document).ready(function() {
-    var modalScope;
     modalElem = document.getElementById('modal');
     overlayElem = document.getElementById('overlay');
     return modalScope = angular.element(modalElem).scope();

@@ -8,7 +8,7 @@ modal       = angular.module 'modal', []
 isOpen      = false
 modalElem   = null
 overlayElem = null
-rootScope	= null
+modalScope	= null
 
 angular.element(document).ready ->
 	modalElem   = document.getElementById 'modal'
